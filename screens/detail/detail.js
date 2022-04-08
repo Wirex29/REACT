@@ -44,9 +44,13 @@ const DetailScreen = ({route}) => {
           uri: `${movie.Poster}`,
         }}
         resizeMode="cover"
-        style={styles.bgImage}>
-        </ImageBackground>
-    <View style={styles.detail}>
+        style={styles.bgImage}></ImageBackground>
+      <LinearGradient
+        start={{x: 0, y: 0}}
+        end={{x: 1, y: 0}}
+        colors={['#4f4477', '#3d4d76', '#2b5876']}
+        style={styles.detailContainer}>
+        <View style={styles.detail}>
           {/* Title */}
           <Text
             style={[FONTS.hSpec, {color: COLORS.white, textAlign: 'center'}]}>
@@ -95,6 +99,7 @@ const DetailScreen = ({route}) => {
             <Button size={{w: 100, h: 20}} title="Watch now"></Button>
           </View>
         </View>
+      </LinearGradient>
     </View>
   );
 };
