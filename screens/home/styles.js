@@ -3,7 +3,6 @@ import {SIZES, COLORS} from '../../constants/theme';
 
 const styles = StyleSheet.create({
   wrap: {
-    flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
   },

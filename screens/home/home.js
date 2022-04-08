@@ -23,15 +23,6 @@ import {
     const [finalKey, setFinalKey] = useState('batman');
   
     return (
-      <LinearGradient
-        start={{x: 0, y: 0}}
-        end={{x: 1, y: 0}}
-        colors={['#4f4477', '#3d4d76', '#2b5876']}
-        style={{
-          flex: 1,
-          justifyContent: 'flex-start',
-          alignItems: 'center',
-        }}>
         <View style={styles.wrap}>
           <ScrollView>
             {/* Info */}
@@ -42,7 +33,7 @@ import {
                 marginTop: 30,
                 paddingHorizontal: 20,
               }}>
-              <Text style={[FONTS.h1thin, {color: COLORS.white}]}>Hi There!</Text>
+              <Text style={[FONTS.h1thin, {color: COLORS.black}]}>Hi There!</Text>
               <TouchableOpacity
                 onPress={() => {
                   navigation.navigate('About');
@@ -74,7 +65,7 @@ import {
                 <Text
                   style={[
                     FONTS.h1,
-                    {color: COLORS.white, paddingBottom: 20, marginLeft: 20},
+                    {color: COLORS.black, paddingBottom: 20, marginLeft: 20},
                   ]}>
                   MOVIE
                 </Text>
@@ -94,7 +85,7 @@ import {
                 <Text
                   style={[
                     FONTS.h1,
-                    {color: COLORS.white, paddingBottom: 20, marginLeft: 20},
+                    {color: COLORS.black, paddingBottom: 20, marginLeft: 20},
                   ]}>
                   SERIES
                 </Text>
@@ -114,7 +105,7 @@ import {
                 <Text
                   style={[
                     FONTS.h1,
-                    {color: COLORS.white, paddingBottom: 20, marginLeft: 20},
+                    {color: COLORS.black, paddingBottom: 20, marginLeft: 20},
                   ]}>
                   EPISODE
                 </Text>
@@ -132,7 +123,6 @@ import {
             </View>
           </ScrollView>
         </View>
-      </LinearGradient>
     );
   };
   
